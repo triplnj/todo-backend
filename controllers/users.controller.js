@@ -1,6 +1,9 @@
 import { db } from "../server.js";
 import createError from 'http-errors';
 
+export const getAll = async (req, res, next) => {
+  res.json({users:  db.data.users})
+}
 
 //REGISTER
 export const addUser = async (req, res, next) => {
