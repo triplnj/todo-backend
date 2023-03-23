@@ -5,7 +5,7 @@ export const userRouter = express.Router();
 
 
 userRouter.route('/')
-    .post(addUser);
+    .post(addUser)
     .get(getAll)
     
     userRouter.route('/:uid')
